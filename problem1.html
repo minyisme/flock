@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <title>Flock Problem 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+
+    <style>
+
+    body {
+        background-image: url(cool-background.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        font-family: sans-serif;
+        color: #010F3D;
+    }
+
+    .box {
+
+        margin: 10% 10% 10% 10%;
+        padding: 5px 5px 5px 5px;
+        border: solid #F7F7F9 10px;
+        opacity: .8;
+        background-color: white;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .question {
+        color: #010F3D;
+        display: block;
+        text-align: center;
+        margin: 3% 0 3% 0;
+    }
+
+    .item-title{
+        font-weight: bold;
+    }
+
+    .item-due{
+        display: inline-block;
+    }
+
+    .item-complete{
+        float: right;
+        display: inline-block;
+    }
+    
+    </style>
+
+    <div class="box" class="col-sm-1" class="col-md-3" class="col-lg-4">
+        <h1 class="title">Create To Do Item</h1>
+        <div class="to-do-div">
+            <form class="to-do-form" action="/todo">
+                <label class="question">What name is this to do item?
+                    <input type="text" name="name">
+                </label>
+                <label class="question">Describe the to do item.
+                    <p>
+                    <textarea rows="5" cols="50" name="description">Description here...
+                    </textarea>
+                    </p>
+                </label>
+                <label class="question">What is the due date?
+                    <input type="text" name="duedate">
+                </label>
+                <label class="question">
+                    <input type="submit" value="Add">
+                </label>
+            </form>
+        </div>
+    </div>
+    <div class="box" class="col-sm-1" class="col-md-3" class="col-lg-4">
+        <h1 class="title">To Do List</h1>
+        <ul class="todo-list">
+            <li class="item">
+                <p class="item-title">Homework 1</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis diam et dui congue, eget mattis ante convallis. Aenean lacus est, ullamcorper nec efficitur at, venenatis in velit. Mauris non lacus dignissim, pharetra est et, tincidunt enim. Nunc nec sapien rutrum, iaculis diam a, ultrices nulla. Maecenas varius feugiat suscipit. In hac habitasse platea dictumst. Cras condimentum risus felis, non dictum nibh maximus eu. Aenean bibendum interdum mauris, eget vulputate risus faucibus in. Vestibulum vitae lectus et elit fringilla porttitor nec eu tortor. Suspendisse potenti. Donec enim nunc, tempor eget sollicitudin non, scelerisque ac est.</p>
+                <p class="item-due">Due: 1/1/1111</p>
+                <p class="item-complete">Not Complete</p>
+            </li>
+            <li class="item">
+                <p class="item-title">Homework 2</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis diam et dui congue, eget mattis ante convallis. Aenean lacus est, ullamcorper nec efficitur at, venenatis in velit. Mauris non lacus dignissim, pharetra est et, tincidunt enim. Nunc nec sapien rutrum, iaculis diam a, ultrices nulla. Maecenas varius feugiat suscipit. In hac habitasse platea dictumst. Cras condimentum risus felis, non dictum nibh maximus eu. Aenean bibendum interdum mauris, eget vulputate risus faucibus in. Vestibulum vitae lectus et elit fringilla porttitor nec eu tortor. Suspendisse potenti. Donec enim nunc, tempor eget sollicitudin non, scelerisque ac est.</p>
+                <p class="item-due">Due: 1/1/1111</p>
+                <p class="item-complete">Completed</p>
+            </li>
+            <li class="item">
+                <p class="item-title">Homework 3</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis diam et dui congue, eget mattis ante convallis. Aenean lacus est, ullamcorper nec efficitur at, venenatis in velit. Mauris non lacus dignissim, pharetra est et, tincidunt enim. Nunc nec sapien rutrum, iaculis diam a, ultrices nulla. Maecenas varius feugiat suscipit. In hac habitasse platea dictumst. Cras condimentum risus felis, non dictum nibh maximus eu. Aenean bibendum interdum mauris, eget vulputate risus faucibus in. Vestibulum vitae lectus et elit fringilla porttitor nec eu tortor. Suspendisse potenti. Donec enim nunc, tempor eget sollicitudin non, scelerisque ac est.</p>
+                <p class="item-due">Due: 1/1/1111</p>
+                <p class="item-complete">Not Complete</p>
+            </li>
+            <li class="item">
+                <p class="item-title">Homework 4</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis diam et dui congue, eget mattis ante convallis. Aenean lacus est, ullamcorper nec efficitur at, venenatis in velit. Mauris non lacus dignissim, pharetra est et, tincidunt enim. Nunc nec sapien rutrum, iaculis diam a, ultrices nulla. Maecenas varius feugiat suscipit. In hac habitasse platea dictumst. Cras condimentum risus felis, non dictum nibh maximus eu. Aenean bibendum interdum mauris, eget vulputate risus faucibus in. Vestibulum vitae lectus et elit fringilla porttitor nec eu tortor. Suspendisse potenti. Donec enim nunc, tempor eget sollicitudin non, scelerisque ac est.</p>
+                <p class="item-due">Due: 1/1/1111</p>
+                <p class="item-complete">Completed</p>
+            </li>
+            <li class="item">
+                <p class="item-title">Homework 5</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis diam et dui congue, eget mattis ante convallis. Aenean lacus est, ullamcorper nec efficitur at, venenatis in velit. Mauris non lacus dignissim, pharetra est et, tincidunt enim. Nunc nec sapien rutrum, iaculis diam a, ultrices nulla. Maecenas varius feugiat suscipit. In hac habitasse platea dictumst. Cras condimentum risus felis, non dictum nibh maximus eu. Aenean bibendum interdum mauris, eget vulputate risus faucibus in. Vestibulum vitae lectus et elit fringilla porttitor nec eu tortor. Suspendisse potenti. Donec enim nunc, tempor eget sollicitudin non, scelerisque ac est.</p>
+                <p class="item-due">Due: 1/1/1111</p>
+                <p class="item-complete">Completed</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
