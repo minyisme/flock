@@ -11,7 +11,7 @@ Next steps:
 - **Complete** Make complete/not complete checkbox
 - **Dynamic Webpage** Make webpage dynamic
 
-# Problem 2                  
+## Problem 2                  
 
 The Python Calculator problem. Finished the basic calculator and created hard coded tests to run and user interface in command line.
 
