@@ -18,3 +18,4 @@ The Python Calculator problem. Finished the basic calculator and created hard co
 Next steps:
 - **Unittesting** Create unittests rather than hardcoded tests
 - **Frontend Interaction** Connect to frontend for cleaner calculator interface
+- **User Input Errors** Need to account for user input errors in the command line interactive section
